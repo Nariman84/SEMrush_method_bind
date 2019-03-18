@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Buy product</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>		
+		<div class="container">
+			<p>Выберите гитару для покупки:</p>
+			<div class="wrap-guitar">
+				<select class="guitar">
+					<option value="Fender Stratocaster">Fender Stratocaster</option>
+					<option value="Gibson SG">Gibson SG</option>
+				</select>
+				<span class="price-guitar">$1000</span>
+
+			</div>
+
+			<div>
+				<label for="buyerName">Введите Ваше имя</label>
+				<input type="text" class="buyerName" name="buyerName">
+			</div>
+			<div>
+				<label for="cash">Введите сумму, которую Вы приготовили для покупки</label>
+				<input type="number" class="cash" name="cash">
+			</div>
+			<button class="buy">Купить</button>
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>

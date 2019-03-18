@@ -1,0 +1,16 @@
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	width: 1020px;
+	margin: 0 auto;
+}
+.wrap-guitar {
+	margin-bottom: 10px;
+}
+.buyerName,
+.cash {
+	display: block;
+	margin-bottom: 10px;
+}
