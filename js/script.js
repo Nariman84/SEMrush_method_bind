@@ -19,7 +19,7 @@ var product2 = {
 	price: 750
 }
 
-product1.sendMessageAboutBuying = function(buyer, cash) {
+function sendMessageAboutBuying(buyer, cash) {
 	if (this.price > cash) {
 		alert(`${buyer}, у Вас не достаточно средств для покупки ${this.name}`);
 	} else {
@@ -45,7 +45,7 @@ btn.addEventListener('click', function() {
 	}
 
 	//привязка функции send к контексту
-	var sendMessage = bind(product1.sendMessageAboutBuying, product);
+	var sendMessage = bind(sendMessageAboutBuying, product);
 
 	var buyerName = document.querySelector('.buyerName').value,
 		cash = document.querySelector('.cash').value;
