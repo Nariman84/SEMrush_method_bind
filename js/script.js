@@ -29,9 +29,9 @@ function sendMessageAboutBuying(buyer, cash) {
 
 guitar.addEventListener('change', function() {
 	if (guitar.value == 'Fender Stratocaster') {
-		priceGuitar.innerText = '$' + product1.price;
+		priceGuitar.innerHTML = '$' + product1.price;
 	} else {
-		priceGuitar.innerText = '$' + product2.price;
+		priceGuitar.innerHTML = '$' + product2.price;
 	}
 });
 
@@ -44,10 +44,10 @@ btn.addEventListener('click', function() {
 		product = product2;
 	}
 
-	//привязка функции send к контексту
+	//привязка функции sendMessage к контексту
 	var sendMessage = bind(sendMessageAboutBuying, product);
 
-	var buyerName = document.querySelector('.buyerName').value,
+	var buyerName = document.querySelector('.buyer-name').value,
 		cash = document.querySelector('.cash').value;
 	sendMessage(buyerName, cash);
 });
